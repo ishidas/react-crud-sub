@@ -1,0 +1,31 @@
+{
+  "name": "react-crud-sub",
+  "version": "1.0.0",
+  "description": "using this repo while drying my laptop",
+  "main": "cli-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishidas/react-crud-sub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishidas/react-crud-sub/issues"
+  },
+  "homepage": "https://github.com/ishidas/react-crud-sub#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "webpack": "^1.13.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.7.7",
+    "babel-preset-react": "^6.5.0"
+  }
+}
