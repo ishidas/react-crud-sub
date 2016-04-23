@@ -2,19 +2,18 @@ var UserInfo = React.createClass({
 	getInitialState: function(){
 		return {
 			login: '',
-			avatart_url: ''
+			avatart_url: '',
+			comments: ''
 		};
 	},
 
 	componentDidMount: function(){
 		this.serverRequest = $.get("https://api.github.com/users/ishidas", function(result){
-			// var dataComingOut = result[0];
-			// console.dir('here is result ' + dataComingOut);
-			// debugger;
+			debugger;
 			console.dir('here is result ' + result);
 			this.setState({
 				login: result.login,
-				avatart_url: result.avatart_url
+				avatart_url: result.avatar_url
 			});
 		}.bind(this));
 	},
@@ -27,8 +26,9 @@ var UserInfo = React.createClass({
 		return (
 			<div>
 				{this.state.login} is my login name.
-				and {this.state.dataOut}
-				<img src={this.state.avatart_url} />
+				
+				Here is my image: 
+				<img src={' this.state.avatar_url '} width="100px" height="100px"/>
 			</div>
 		);
 	}
